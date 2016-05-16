@@ -11,10 +11,10 @@
 	date="15.05.2016"
 	description="Shows BuyBack gold in a movable frame. Based heavily off of the GPM mod by biomass."
 	author="MrHappyAsthma"
-  weblink="https://github.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod"
-  updatecheckurl="https://github.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod/blob/master/version.txt"
+  weblink="http://github.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod"
+  updatecheckurl="http://raw.githubusercontent.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod/master/version.txt"
+  updatedownloadurl="http://github.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod/releases/download/Latest/bbgold.honmod"
   >
-  <!--updatedownloadurl="https://github.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod/releases/bbgold.honmod"-->
 
 	<applyafter name="BardUI" />
 	<applyafter name="MiniUI" />
