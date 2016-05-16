@@ -5,6 +5,8 @@
 ##About
 This is a mod for the [Heroes of Newerth](http://www.heroesofnewerth.com/) (HoN) video game to show an on-screen overlay displaying the total gold required for buy-back. (That is, the sum of the gold lost-on-death and the cost for the buy-back itself.)
 
+This mod is based heavily off of the excellent GPM mod by biomass. Check that out [here](http://forums.heroesofnewerth.com/showthread.php?79795-Gold-per-Minute-%28movable-frame%29-1-2-%2819-Feb-2011%29&p=15664502&viewfull=1#post15664502).
+
 ##Install
 0. You will need the [HoN Mod Manager](http://forums.heroesofnewerth.com/showthread.php?25883-HoN-Modification-Manager-1-3-6) to use this mod. So first, install that.
 
