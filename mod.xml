@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Info on the file layout can be found here:
+         http://forums.heroesofnewerth.com/showthread.php?25883-HoN-Modification-Manager-1-3-6
+-->
+<modification
+	application="Heroes of Newerth"
+	appversion="*"
+	mmversion="*"
+	name="Buy Back Gold"
+	version="1.0"
+	date="15.05.2016"
+	description="Shows BuyBack gold in a movable frame. Based heavily off of the GPM mod by biomass."
+	author="MrHappyAsthma"
+  weblink="https://github.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod"
+  updatecheckurl="https://github.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod/blob/master/version.txt"
+  >
+  <!--updatedownloadurl="https://github.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod/releases/bbgold.honmod"-->
+
+	<applyafter name="BardUI" />
+	<applyafter name="MiniUI" />
+
+	<copyfile name="ui/buy_back_gold.package" />
+	<copyfile name="ui/buy_back_gold_options.package" />
+
+	<editfile name="ui/game.interface">
+		<find><![CDATA[	<trigger name="ItemTooltip"/>]]></find>
+		<insert position="after"><![CDATA[
+	<include file="buy_back_gold.package"/>]]></insert>
+	</editfile>
+
+	<editfile name="ui/mod_options_templates.package" >
+        <find><![CDATA[	<!-- INSERT AFTER THIS -->]]></find>
+        <insert position="after">
+            <![CDATA[
+                <include file="buy_back_gold_options.package" />
+            ]]>
+    	</insert>
+    	</editfile>
+
+	<editfile name="ui/mod_options_elements.package">
+	<find><![CDATA[<!-- INSERT AFTER THIS -->]]></find>
+        <insert position="after">
+            <![CDATA[
+                <!-- Use template -->
+                <instance name="bbgold_options" />
+            ]]>
+        </insert>
+	</editfile>
+
+</modification>
