@@ -7,7 +7,7 @@ This is a mod for the [Heroes of Newerth](http://www.heroesofnewerth.com/) (HoN)
 
 This mod is based heavily off of the excellent GPM mod by biomass. Check that out [here](http://forums.heroesofnewerth.com/showthread.php?79795-Gold-per-Minute-%28movable-frame%29-1-2-%2819-Feb-2011%29&p=15664502&viewfull=1#post15664502).
 
-##Install
+##Installing
 0. You will need the [HoN Mod Manager](http://forums.heroesofnewerth.com/showthread.php?25883-HoN-Modification-Manager-1-3-6) to use this mod. So first, install that.
 
 1. Once that is installed, you can download the latest release of the Buy-Back Gold mod from [here](https://github.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod/releases/download/Latest/bbgold.honmod).
