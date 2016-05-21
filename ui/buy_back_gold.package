@@ -22,10 +22,16 @@
 			height="0%"
       onload="CreateInt('bbgoldamount', 0);"
       watch0="GoldReport"
-      ontrigger0="Set('bbgoldamount', Round(param5+param6));
-                  SetText(_buy_back_gold_option_prefix # bbgoldamount);"
+      ontrigger0="Set('bbgoldamount', Round(param5+param6));"
       watch1="PlayerGold"
-      ontrigger1="If(param >= bbgoldamount, SetColor('green'), SetColor('red'));"
+      ontrigger1="If(param >= bbgoldamount,
+                     SetColor('green'),
+                     SetColor('red')
+                  );
+                  If(param >= bbgoldamount,
+                     SetText(_buy_back_gold_option_prefix # '+' # Round(param - bbgoldamount)),
+                     SetText(_buy_back_gold_option_prefix # Round(param - bbgoldamount))
+                  );"
 			/>
 		</panel>
 		</panel>
