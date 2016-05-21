@@ -7,7 +7,7 @@
 	appversion="*"
 	mmversion="*"
 	name="Buy Back Gold"
-	version="1.0"
+	version="1.2"
 	date="15.05.2016"
 	description="Shows BuyBack gold in a movable frame. Based heavily off of the GPM mod by biomass."
 	author="MrHappyAsthma"
