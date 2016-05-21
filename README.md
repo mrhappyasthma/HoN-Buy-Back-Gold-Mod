@@ -1,9 +1,10 @@
 # HoN Buy-Back Gold Mod
 
-![Example of what the in-game overlay looks like.](http://i.imgur.com/fccoMdr.jpg)
+![Example of what the in-game overlay looks like when you dont have enough gold.](http://i.imgur.com/TrkZLlz.jpg)
+![Example of what the in-game overlay looks like when you have surplus gold.](http://i.imgur.com/EEbkFoN.jpg)
 
 ##About
-This is a mod for the [Heroes of Newerth](http://www.heroesofnewerth.com/) (HoN) video game to show an on-screen overlay displaying the total gold required for buy-back. (That is, the sum of the gold lost-on-death and the cost for the buy-back itself.)
+This is a mod for the [Heroes of Newerth](http://www.heroesofnewerth.com/) (HoN) video game to show an on-screen overlay displaying how much gold you need until buy-back (including gold lost-on-death). If you have more than enough gold, it will show your surplus.
 
 This mod is based heavily off of the excellent GPM mod by biomass. Check that out [here](http://forums.heroesofnewerth.com/showthread.php?79795-Gold-per-Minute-%28movable-frame%29-1-2-%2819-Feb-2011%29&p=15664502&viewfull=1#post15664502).
 
