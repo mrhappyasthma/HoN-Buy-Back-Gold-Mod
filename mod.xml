@@ -7,8 +7,8 @@
 	appversion="*"
 	mmversion="*"
 	name="Buy Back Gold"
-	version="1.3"
-	date="15.05.2016"
+	version="1.4"
+	date="02.01.2017"
 	description="Shows BuyBack gold in a movable frame. Based heavily off of the GPM mod by biomass."
 	author="MrHappyAsthma"
   weblink="http://github.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod"
@@ -22,29 +22,52 @@
 	<copyfile name="ui/buy_back_gold.package" />
 	<copyfile name="ui/buy_back_gold_options.package" />
 
-	<editfile name="ui/game.interface">
+  <!-- Legacy UI -->
+	<editfile name="ui/game_legacy.interface">
 		<find><![CDATA[	<trigger name="ItemTooltip"/>]]></find>
-		<insert position="after"><![CDATA[
-	<include file="buy_back_gold.package"/>]]></insert>
+		<insert position="after">
+      <![CDATA[
+	      <include file="buy_back_gold.package"/>
+      ]]>
+    </insert>
+	</editfile>
+
+  <!-- Apex UI -->
+  <editfile name="ui/game_apex.interface">
+  	<find><![CDATA[	<trigger name="ItemTooltip"/>]]></find>
+		<insert position="after">
+      <![CDATA[
+	      <include file="buy_back_gold.package"/>
+      ]]>
+    </insert>
+	</editfile>
+
+  <!-- Garena UI -->
+	<editfile name="ui/game_garena_other.interface">
+    <find><![CDATA[	<trigger name="ItemTooltip"/>]]></find>
+		<insert position="after">
+      <![CDATA[
+	      <include file="buy_back_gold.package"/>
+      ]]>
+    </insert>
 	</editfile>
 
 	<editfile name="ui/mod_options_templates.package" >
-        <find><![CDATA[	<!-- INSERT AFTER THIS -->]]></find>
-        <insert position="after">
-            <![CDATA[
-                <include file="buy_back_gold_options.package" />
-            ]]>
-    	</insert>
-    	</editfile>
+    <find><![CDATA[	<!-- INSERT AFTER THIS -->]]></find>
+    <insert position="after">
+      <![CDATA[
+        <include file="buy_back_gold_options.package" />
+      ]]>
+    </insert>
+  </editfile>
 
 	<editfile name="ui/mod_options_elements.package">
-	<find><![CDATA[<!-- INSERT AFTER THIS -->]]></find>
-        <insert position="after">
-            <![CDATA[
-                <!-- Use template -->
-                <instance name="bbgold_options" />
-            ]]>
-        </insert>
+	  <find><![CDATA[<!-- INSERT AFTER THIS -->]]></find>
+    <insert position="after">
+      <![CDATA[
+        <instance name="bbgold_options" />
+      ]]>
+    </insert>
 	</editfile>
 
 </modification>
