@@ -22,7 +22,7 @@
 	<copyfile name="ui/buy_back_gold.package" />
 	<copyfile name="ui/buy_back_gold_options.package" />
 
-  <!-- Legacy UI -->
+  <!-- Classic UI -->
 	<editfile name="ui/game_legacy.interface">
 		<find><![CDATA[	<trigger name="ItemTooltip"/>]]></find>
 		<insert position="after">
@@ -32,7 +32,7 @@
     </insert>
 	</editfile>
 
-  <!-- Apex UI -->
+  <!-- Razor UI -->
   <editfile name="ui/game_apex.interface">
   	<find><![CDATA[	<trigger name="ItemTooltip"/>]]></find>
 		<insert position="after">
@@ -42,7 +42,7 @@
     </insert>
 	</editfile>
 
-  <!-- Garena UI -->
+  <!-- Sentinel UI -->
 	<editfile name="ui/game_garena_other.interface">
     <find><![CDATA[	<trigger name="ItemTooltip"/>]]></find>
 		<insert position="after">
