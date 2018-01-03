@@ -8,11 +8,32 @@
 			width="0%"
 			x="30"
 			y="30"
+      onloadlua="GetWidget('biogpm', 'game'):SetVisible(true)"
+      onshowlua="Set('cg_enableGoldReport', true)"
 		>
 
-		<frame texture="/ui/frames/roundframe.tga" noclick="true" bordercolor="1 1 1 .75" borderthickness="0.8h" watch="gpm_frametrigger" onload="If(_gpm_option_frame and !_gpm_option_frame_notrounded,SetVisible(true),SetVisible(false));" ontrigger="If(_gpm_option_frame and !_gpm_option_frame_notrounded,SetVisible(true),SetVisible(false));" />
-		<frame noclick="true" bordercolor="0" color="0 0 0 0" borderthickness="0" watch="gpm_frametrigger" onload="If(_gpm_option_frame_notrounded and !_gpm_option_frame,SetVisible(true),SetVisible(false));" ontrigger="If(_gpm_option_frame_notrounded and !_gpm_option_frame,SetVisible(true),SetVisible(false));" />
-		<panel onload="SetVAlign('center'); SetHAlign('center');" >
+		<frame
+      texture="/ui/frames/roundframe.tga"
+      noclick="true"
+      bordercolor="1 1 1 .75"
+      borderthickness="0.8h"
+      watch="gpm_frametrigger"
+      onload="If(_gpm_option_frame and !_gpm_option_frame_notrounded,SetVisible(true),SetVisible(false));"
+      ontrigger="If(_gpm_option_frame and !_gpm_option_frame_notrounded,SetVisible(true),SetVisible(false));"
+    />
+		<frame
+      noclick="true"
+      bordercolor="0"
+      color="0 0 0 0"
+      borderthickness="0"
+      watch="gpm_frametrigger"
+      onload="If(_gpm_option_frame_notrounded and !_gpm_option_frame,SetVisible(true),SetVisible(false));"
+      ontrigger="If(_gpm_option_frame_notrounded and !_gpm_option_frame,SetVisible(true),SetVisible(false));"
+     />
+		<panel
+      onload="SetVAlign('center');
+      SetHAlign('center');"
+    >
 		<instance
 			name="movf_label"
 			id="bbgold"
