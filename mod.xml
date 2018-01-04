@@ -7,8 +7,8 @@
 	appversion="*"
 	mmversion="*"
 	name="Buy Back Gold"
-	version="1.5"
-	date="01.02.2018"
+	version="1.6"
+	date="01.03.2018"
 	description="Shows BuyBack gold in a movable frame. Based heavily off of the GPM mod by biomass."
 	author="MrHappyAsthma"
   weblink="http://github.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod"
@@ -50,6 +50,28 @@
 	      <include file="buy_back_gold.package"/>
       ]]>
     </insert>
+	</editfile>
+
+  <!-- 8 bit UI -->
+	<editfile name="ui/game_retro.interface">
+		<find><![CDATA[	<trigger name="ItemTooltip"/>]]></find>
+		<insert position="after">
+      <![CDATA[
+	      <include file="buy_back_gold.package"/>
+      ]]>
+    </insert>
+	</editfile>
+
+  <!-- Enable Gold Report -->
+	<editfile name="ui/game_gold_report.package" condition="not 'Gold/Min'">
+		<find><![CDATA[		onhidelua="
+			if not GetWidget('shop_tooltip_gold_report', 'game'):IsVisible() then
+				Set('cg_enableGoldReport', false)
+			end
+		"]]></find>
+		<delete/>
+		<find><![CDATA[		onhidelua="if not GetWidget('buyback_indicator', 'game'):IsVisible() then Set('cg_enableGoldReport', false) end"]]></find>
+		<delete/>
 	</editfile>
 
 	<editfile name="ui/mod_options_templates.package" >
