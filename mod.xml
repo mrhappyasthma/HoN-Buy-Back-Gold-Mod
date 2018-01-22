@@ -7,8 +7,8 @@
 	appversion="*"
 	mmversion="*"
 	name="Buy Back Gold"
-	version="1.6"
-	date="01.03.2018"
+	version="1.7"
+	date="01.21.2018"
 	description="Shows BuyBack gold in a movable frame. Based heavily off of the GPM mod by biomass."
 	author="MrHappyAsthma"
   weblink="http://github.com/mrhappyasthma/HoN-Buy-Back-Gold-Mod"
@@ -45,16 +45,6 @@
   <!-- Sentinel UI -->
 	<editfile name="ui/game_garena_other.interface">
     <find><![CDATA[	<trigger name="ItemTooltip"/>]]></find>
-		<insert position="after">
-      <![CDATA[
-	      <include file="buy_back_gold.package"/>
-      ]]>
-    </insert>
-	</editfile>
-
-  <!-- 8 bit UI -->
-	<editfile name="ui/game_retro.interface">
-		<find><![CDATA[	<trigger name="ItemTooltip"/>]]></find>
 		<insert position="after">
       <![CDATA[
 	      <include file="buy_back_gold.package"/>
